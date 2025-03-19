@@ -1,0 +1,73 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  height: 50px;
+}
+
+.left-header,
+.middle-header,
+.right-header {
+  display: flex;
+  align-items: center;
+}
+
+.left-header,
+.header-button {
+  cursor: pointer;
+}
+
+.left-header img:first-child {
+  width: 35px;
+  height: 35px;
+}
+
+.left-header img:last-child {
+  margin-left: 10px;
+  width: 90px;
+}
+
+.middle-header img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.middle-header input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right-header img {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  padding: 3px;
+}
+
+.header-button:hover {
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.createPost {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.createPost img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.createPost span {
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Reddit Sans';
+  src: url('./assets/fonts/RedditSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Reddit Sans';
+  src: url('./assets/fonts/RedditSans-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Reddit Sans', sans-serif;
 }
