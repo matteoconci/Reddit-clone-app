@@ -1,0 +1,114 @@
+nav{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 50px;
+    border-right: 1px solid lightgrey;
+    display: flex;
+    padding-top: 10px;
+    width: 22%;
+    font-size: 0.78rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 85%);
+    border-radius: 10px;
+  }
+  
+  .custom-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+.home-bar, .feeds-bar, .recent-bar, .communities-bar, .resource-bar{
+    width: 80%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 10px;
+}
+
+/* Feeds bar */
+
+.open-close{
+    width: 15px;
+    height: 15px;
+    background-image: url('../../assets/images/LeftSideBar/open-close.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.open-close.open{
+    transform: rotate(180deg);
+}
+
+.topic-btn{
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.bar-btn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar-btn:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.icon-nav{
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Resource Bar */
+.resource-bar{
+    border: none !important;
+}
+
+.resource-part-1{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.beta{
+    margin-left: 15px;
+    color: red;
+    font-weight: 600;
+}
+
+.resource-part-2{
+    margin-top: 10px;
+}
+
+/* !Drop down */
+.dropdown-menu {
+    height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    overflow: hidden;
+    transition: height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.open {
+    height: auto; 
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+  
