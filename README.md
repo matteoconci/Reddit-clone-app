@@ -1,12 +1,37 @@
-# React + Vite
+# Reddit Clone
+🚧 **Project Status: Work in Progress** 🚧
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an open-source Reddit Clone currently in development. The goal of this project is to create a platform that allows users to post content, engage in discussions, and vote on posts, similar to Reddit.
 
-Currently, two official plugins are available:
+## Features (Planned & In Progress)
+- 📝 User authentication & authorization
+- 📌 Create, edit, and delete posts
+- 💬 Commenting and nested discussions
+- ⬆️⬇️ Upvote & downvote system
+- 🔍 Search and filtering options
+- 📱 Responsive design for mobile and desktop
+- 🚀 Performance optimizations
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend:** React, and Redux
+- **Reddit API** [Link](https://www.reddit.com/dev/api/)
 
-## Expanding the ESLint configuration
+## Installation
+To set up the project locally, follow these steps:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repository
+git clone https://github.com/matteoconci/Reddit-clone-app.git
+
+# Navigate to the project folder
+cd Reddit-clone-app
+
+# Install dependencies
+npm install  
+
+# Start the development server
+npm run dev  
+```
+
+## License
+*In progress...*
