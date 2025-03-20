@@ -1,0 +1,37 @@
+.commentList {
+    text-align: center;
+    margin: 10px auto;
+    border: 1px;
+    border-radius: 7px;
+    width: 45%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.topComment {
+    display: flex;
+    align-items: center;
+}
+
+.date {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+img {
+    margin-right: 5px;
+}
+
+.content {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentList:hover {
+    background-color: #F6F8F9;
+}
