@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import PostDetail from './PostDetail.jsx';
-import { mockPosts, mockComments } from '../../mock/mockData';
+import PostList from './PostList.jsx';
+import { mockPosts, mockComments } from '../../mock/mockData.js';
 
 jest.mock('../../mock/mockData', () => ({
     mockPosts: {
@@ -45,7 +45,7 @@ jest.mock('../../mock/mockData', () => ({
 }));
 
 test('renders post detail', () => {
-    render(<PostDetail />);
+    render(<PostList />);
     const postTitle = screen.getByText('What is your favorite programming language');
     expect(postTitle).toBeInTheDocument();
     const postContent = screen.getByText("I'm curious to know what language people prefer and why!");
