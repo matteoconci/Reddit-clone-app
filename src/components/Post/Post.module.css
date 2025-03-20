@@ -1,11 +1,9 @@
 .postList {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto;
     border: 1px;
     border-radius: 7px;
     width: 50%;
-    justify-self: center;
     padding: 20px;
     padding-top: 0;
 }
@@ -48,5 +46,5 @@ hr {
     height: 1px;
     background-color: #00000019;
     width: 51%;
-    justify-self: center;
+    margin: auto;
 }
