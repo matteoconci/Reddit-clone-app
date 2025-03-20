@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './PostList.css';
 import { mockPosts, mockComments } from '../../mock/mockData';
 import Post from '../Post/Post';
-import CommentList from '../CommentList/CommentList';
 
 const PostList = () => {
   const [post] = useState(mockPosts);
@@ -13,6 +12,7 @@ const PostList = () => {
       {post.map((post) => {
         return (
           <Post 
+            key={post.id}
             id={post.id}
             title={post.title}
             content={post.content}
@@ -21,12 +21,12 @@ const PostList = () => {
             avatar={post.author.avatar}
             subreddit={post.subreddit}
             upvotes={post.upvotes}
-            comments={post.comments}
+            postComments={post.comments}
             date={post.createdAt}
+            comments={comments}
           />
         )
       })};
-      <CommentList comments={comments} />
     </div>
   );
 };

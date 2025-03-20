@@ -1,22 +1,30 @@
 .postList {
-    text-align: center;
     margin: 10px auto;
     border: 1px;
     border-radius: 7px;
     width: 50%;
     padding: 20px;
-    padding-top: 0;
+    padding-top: 5px;    
+}
+
+.postList:first-child {
+    margin-top: 75px;
 }
 
 h3 {
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .topPost {
     display: flex;
+    align-items: center;
+}
+.date {
+    margin-left: 5px;
+    font-size: 12px;
 }
 
-img {
+.avatar {
     margin-right: 5px;
 }
 
@@ -25,16 +33,20 @@ img {
 }
 
 .content {
-    justify-self: left;
+    margin: 15px 0;
+    text-align: left;
 }
 
-.content {
-    margin: 20px 0;
+.media {
+    display: flex;
+    margin: 15px auto;
+    width: 80%;
 }
 
 .bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .postList:hover {
