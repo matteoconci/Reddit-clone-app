@@ -30,18 +30,6 @@ header {
   width: 90px;
 }
 
-.middle-header img {
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-}
-
-.middle-header input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
 .right-header img {
   width: 25px;
   height: 25px;
