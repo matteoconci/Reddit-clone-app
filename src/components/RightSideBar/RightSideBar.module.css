@@ -1,7 +1,7 @@
 .rightSideBar {
     position: sticky;
-    top: 75px; /* mantiene la distanza dall'alto */
-    align-self: start; /* utile se è in un flex container */
+    top: 75px; 
+    align-self: start; 
     border: 1px;
     border-radius: 7px;
     background-color: #F6F8F9;
