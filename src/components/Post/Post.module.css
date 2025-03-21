@@ -47,7 +47,23 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+    align-items: center;
 }
+
+.upvotes {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-right: 0;
+    cursor: pointer;
+    width: 20px;
+}
+
+.arrow:active {
+    transform: scale(1.2);
+  }
 
 .postList:hover {
     background-color: #F6F8F9;
