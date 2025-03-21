@@ -18,7 +18,7 @@
     font-size: 12px;
 }
 
-img {
+.avatar {
     margin-right: 5px;
 }
 
@@ -29,8 +29,18 @@ img {
 
 .bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
+
+.arrow {
+    margin-right: 0;
+    cursor: pointer;
+    width: 20px;
+}
+
+.arrow:active {
+    transform: scale(1.2);
+  }
 
 .commentList:hover {
     background-color: #F6F8F9;
