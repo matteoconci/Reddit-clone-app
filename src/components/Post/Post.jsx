@@ -15,24 +15,24 @@ function timeSinceDate(dateString) {
     return `${diffInHours} h ago`.replace(".00", "");
 };
 
-const Post = ({id, title, content, media, author, avatar, subreddit, upvotes, postComments, date, comments}) => {
-    const filteredComments = comments.filter(comment => comment.postId === id);
+const Post = ({ post, comments }) => {
+    const filteredComments = comments.filter(comment => comment.postId === post.id);
 
     return (
         <>
             <div className={styles.postList}>
                 <div className={styles.topPost}>
-                    <img className={styles.avatar} src={avatar} style={{width: '30px'}}/>
-                    <p>{author} · </p>
-                    <p className={styles.date}>{timeSinceDate(date)}</p>
-                    <p className={styles.subreddit}>r/{subreddit}</p>
+                    <img className={styles.avatar} src={post.author.avatar} style={{width: '30px'}}/>
+                    <p>{post.author.username} · </p>
+                    <p className={styles.date}>{timeSinceDate(post.createdAt)}</p>
+                    <p className={styles.subreddit}>r/{post.subreddit}</p>
                 </div>
-                <h3>{title}</h3>
-                <p className={styles.content}>{content}</p>
-                <img className={styles.media} src={media}/>
+                <h3>{post.title}</h3>
+                <p className={styles.content}>{post.content}</p>
+                <img className={styles.media} src={post.media}/>
                 <div className={styles.bottom}>
-                    <p>{upvotes} upvotes</p>
-                    <p>{postComments} comments</p>
+                    <p>{post.upvotes} upvotes</p>
+                    <p>{post.comments} comments</p>
                 </div>
             </div>
             <div className={comments}>
@@ -41,11 +41,7 @@ const Post = ({id, title, content, media, author, avatar, subreddit, upvotes, po
                             return (
                                 <Comment 
                                    key={comment.id}
-                                   author={comment.author.username}
-                                   avatar={comment.author.avatar}
-                                   content={comment.content}
-                                   upvotes={comment.upvotes}
-                                   date={comment.createdAt}
+                                   comment={comment}
                                 />
                             )
                         })

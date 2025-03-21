@@ -66,5 +66,3 @@ export const mockPosts = [
         createdAt: "2025-03-19T14:00:00Z",
     },
   ];
-
-//   export const mock

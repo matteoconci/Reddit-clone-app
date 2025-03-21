@@ -14,18 +14,18 @@ function timeSinceDate(dateString) {
     return `${diffInHours} h ago`.replace(".00", "");
 };
 
-const Comment = ({content, author, avatar, upvotes, date}) => {
+const Comment = ({ comment }) => {
     return (
         <>
             <div className={styles.commentList}>
                 <div className={styles.topComment}>
-                    <img src={avatar} style={{width: '30px'}}/>
-                    <p>{author} · </p>
-                    <p className={styles.date}>{timeSinceDate(date)}</p>
+                    <img src={comment.author.avatar} style={{width: '30px'}}/>
+                    <p>{comment.author.username} · </p>
+                    <p className={styles.date}>{timeSinceDate(comment.createdAt)}</p>
                 </div>
-                <p className={styles.content}>{content}</p>
+                <p className={styles.content}>{comment.content}</p>
                 <div className={styles.bottom}>
-                    <p>{upvotes} upvotes</p>
+                    <p>{comment.upvotes} upvotes</p>
                 </div>
             </div>
         </>
